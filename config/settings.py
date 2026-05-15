@@ -28,8 +28,8 @@ class Settings(BaseSettings):
     notion_freds_brain_page_id: str = Field("", env="NOTION_FREDS_BRAIN_PAGE_ID")
 
     # ── Alpaca ────────────────────────────────────────────────
-    alpaca_api_key: str = Field(..., env="ALPACA_API_KEY")
-    alpaca_secret_key: str = Field(..., env="ALPACA_SECRET_KEY")
+    alpaca_api_key: Optional[str] = Field(None, env="ALPACA_API_KEY")
+    alpaca_secret_key: Optional[str] = Field(None, env="ALPACA_SECRET_KEY")
     alpaca_base_url: str = Field(
         "https://paper-api.alpaca.markets", env="ALPACA_BASE_URL"
     )
