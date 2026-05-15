@@ -46,6 +46,12 @@ class Settings(BaseSettings):
     twitter_access_secret: Optional[str] = Field(None, env="TWITTER_ACCESS_SECRET")
     twitter_use_scraper: bool = Field(True, env="TWITTER_USE_SCRAPER")
 
+    # ── Twilio ────────────────────────────────────────────────────────────────
+    twilio_account_sid: Optional[str] = Field(None, env="TWILIO_ACCOUNT_SID")
+    twilio_auth_token: Optional[str] = Field(None, env="TWILIO_AUTH_TOKEN")
+    twilio_phone_number: Optional[str] = Field(None, env="TWILIO_PHONE_NUMBER")
+    your_phone_number: Optional[str] = Field(None, env="YOUR_PHONE_NUMBER")
+
     # ── Telegram ──────────────────────────────────────────────────────────────
     telegram_bot_token: str = Field("", env="TELEGRAM_BOT_TOKEN")
     telegram_chat_id: str = Field("", env="TELEGRAM_CHAT_ID")
