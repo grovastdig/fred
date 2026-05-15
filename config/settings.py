@@ -27,12 +27,6 @@ class Settings(BaseSettings):
     notion_social_triggers_db: str = Field("", env="NOTION_SOCIAL_TRIGGERS_DB")
     notion_freds_brain_page_id: str = Field("", env="NOTION_FREDS_BRAIN_PAGE_ID")
 
-    # ── Twilio ────────────────────────────────────────────────
-    twilio_account_sid: str = Field(..., env="TWILIO_ACCOUNT_SID")
-    twilio_auth_token: str = Field(..., env="TWILIO_AUTH_TOKEN")
-    twilio_phone_number: str = Field(..., env="TWILIO_PHONE_NUMBER")
-    your_phone_number: str = Field(..., env="YOUR_PHONE_NUMBER")
-
     # ── Alpaca ────────────────────────────────────────────────
     alpaca_api_key: str = Field(..., env="ALPACA_API_KEY")
     alpaca_secret_key: str = Field(..., env="ALPACA_SECRET_KEY")
