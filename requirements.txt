@@ -1,0 +1,68 @@
+# ============================================================
+# FRED — Python Dependencies
+# Tested on Python 3.11 - 3.14
+# Install: pip install -r requirements.txt
+# ============================================================
+
+# ── Web Framework ─────────────────────────────────────────────
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.6
+python-multipart>=0.0.12
+
+# ── Async HTTP ────────────────────────────────────────────────
+httpx>=0.27.2
+aiohttp>=3.10.5
+requests>=2.32.3
+
+# ── Anthropic (Fred's Brain) ─────────────────────────────────
+anthropic>=0.40.0
+
+# ── Market Data ───────────────────────────────────────────────
+yfinance>=0.2.43
+pandas>=2.2.3
+numpy>=1.26.4
+
+# ── Technical Indicators ──────────────────────────────────────
+ta>=0.11.0
+
+# ── Notion Integration ────────────────────────────────────────
+notion-client>=2.2.1
+
+# ── Twilio SMS ────────────────────────────────────────────────
+twilio>=9.3.3
+
+# ── Alpaca Paper Trading ──────────────────────────────────────
+alpaca-py>=0.29.0
+
+# ── Twitter/X Monitoring ──────────────────────────────────────
+tweepy>=4.14.0
+
+# ── News / RSS ────────────────────────────────────────────────
+feedparser>=6.0.11
+newsapi-python>=0.2.7
+beautifulsoup4>=4.12.3
+lxml>=5.3.0
+
+# ── Scheduling ────────────────────────────────────────────────
+apscheduler>=3.10.4
+
+# ── Image Processing ──────────────────────────────────────────
+Pillow>=11.0.0
+pytesseract>=0.3.13
+
+# ── Configuration ─────────────────────────────────────────────
+python-dotenv>=1.0.1
+pydantic>=2.10.0
+pydantic-settings>=2.6.0
+
+# ── Utilities ─────────────────────────────────────────────────
+python-dateutil>=2.9.0
+loguru>=0.7.2
+tenacity>=9.0.0
+rich>=13.8.1
+
+# ── Testing ───────────────────────────────────────────────────
+pytest>=8.3.3
+pytest-asyncio>=0.24.0
+pytest-mock>=3.14.0
+tzdata>=2024.2
